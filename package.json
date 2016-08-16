@@ -1,0 +1,23 @@
+{
+  "name": "learn-rollup",
+  "version": "0.0.0",
+  "description": "This is an example project to accompany a tutorial on using Rollup.",
+  "main": "build/js/main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jlengstorf/learn-rollup.git"
+  },
+  "author": "Jason Lengstorf <jason@lengstorf.com> (@jlengstorf)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengstorf/learn-rollup/issues"
+  },
+  "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
