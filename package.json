@@ -16,6 +16,8 @@
     "url": "https://github.com/jlengstorf/learn-rollup/issues"
   },
   "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "rollup": "^0.34.9"
+  },
   "dependencies": {}
 }
