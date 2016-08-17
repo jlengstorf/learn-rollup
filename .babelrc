@@ -1,4 +1,3 @@
 {
-  "presets": ["es2015-rollup"],
-  "ignore": ["node_modules"],
+  "presets": ["es2015-rollup"]
 }

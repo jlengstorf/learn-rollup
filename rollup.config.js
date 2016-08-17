@@ -7,6 +7,8 @@ export default {
   format: 'iife',
   sourceMap: 'inline',
   plugins: [
-    babel(),
+    babel({
+      exclude: 'node_modules/**',
+    }),
   ],
 };
