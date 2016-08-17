@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
   "devDependencies": {
-    "rollup": "^0.34.9"
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.34.9",
+    "rollup-plugin-babel": "^2.6.1"
   },
   "dependencies": {}
 }
