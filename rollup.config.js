@@ -13,6 +13,8 @@ export default {
         'src/styles/**',
       ]
     }),
-    babel(),
+    babel({
+      exclude: 'node_modules/**',
+    }),
   ],
 };
