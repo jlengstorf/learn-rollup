@@ -1,6 +1,6 @@
 {
   "name": "learn-rollup",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is an example project to accompany a tutorial on using Rollup.",
   "main": "build/js/main.min.js",
   "scripts": {
