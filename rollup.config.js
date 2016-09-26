@@ -23,7 +23,7 @@ export default {
       plugins: [
         simplevars(),
         nested(),
-        cssnext({ warnForDuplicates: false, }),
+        cssnext({ warnForDuplicates: false }),
         cssnano(),
       ],
       extensions: [ '.css' ],
@@ -33,7 +33,12 @@ export default {
       main: true,
       browser: true,
     }),
-    commonjs(),
+    commonjs({
+      include: 'node_modules/**',
+      namedExports: {
+        'node_modules/react-dom/index.js': ['render'],
+      },
+    }),
     eslint({
       exclude: [
         'src/styles/**',
@@ -43,8 +48,8 @@ export default {
       exclude: 'node_modules/**',
     }),
     replace({
-      exclude: 'node_modules/**',
       ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
     (process.env.NODE_ENV === 'production' && uglify()),
   ],
