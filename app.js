@@ -14,5 +14,5 @@ app.get('*', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Learn-rollup app started on port 3000!'); // eslint-disable-line no-console
+  console.log('Learn-rollup app started at http://localhost:3000/'); // eslint-disable-line no-console
 });
