@@ -4,13 +4,23 @@
     "es6": true
   },
   "globals": {
-    "ENV": true
+    "ENV": true,
+    "process": true
   },
   "extends": "eslint:recommended",
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "rules": {
+    "comma-dangle": ["warn", "only-multiline"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "indent": [
       "error",
       2

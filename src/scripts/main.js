@@ -6,6 +6,8 @@ import { sayHelloTo } from './modules/mod1';
 import addArray from './modules/mod2';
 
 // Import a logger for easier debugging.
+import React from 'react';
+import { render } from 'react-dom';
 import debug from 'debug';
 const log = debug('app:log');
 
@@ -29,8 +31,13 @@ if (ENV !== 'production') {
 const result1 = sayHelloTo('Jason');
 const result2 = addArray([1, 2, 3, 4]);
 
-// Print the results on the page.
-const printTarget = document.getElementsByClassName('debug__output')[0];
+// Script output
+const App = () => (
+  <code className="debug__output">
+    {`sayHelloTo('Jason') => ${result1}\n\n`}
+    {`addArray([1, 2, 3, 4]) => ${result2}`}
+  </code>
+);
 
-printTarget.innerText = `sayHelloTo('Jason') => ${result1}\n\n`;
-printTarget.innerText += `addArray([1, 2, 3, 4]) => ${result2}`;
+// Render the results on the page.
+render(<App />, document.getElementsByClassName('debug')[0]);
