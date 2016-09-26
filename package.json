@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "rollup -c --watch",
     "reload": "livereload 'build/'",
-    "watch": "npm-run-all --parallel reload dev",
+    "start": "rollup -c rollup.server.config.js && node server/app.js",
+    "watch": "npm-run-all --parallel reload dev start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,6 +39,8 @@
     "rollup-watch": "^2.5.0"
   },
   "dependencies": {
-    "debug": "^2.2.0"
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1"
   }
 }
