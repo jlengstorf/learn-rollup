@@ -6,7 +6,7 @@ See the video of how this was made at https://code.lengstorf.com/learn-rollup-js
 
 ## Alternative Configurations
 
-- [Default configuration (as built in the video)](/jlengstorf/learn-rollup/)
-- [Simple Node server for development using Express](/jlengstorf/learn-rollup/tree/alt-config/express)
+- [Default configuration (as built in the video)](https://github.com/jlengstorf/learn-rollup/)
+- [Simple Node server for development using Express](https://github.com/jlengstorf/learn-rollup/tree/alt-config/express)
 
 
