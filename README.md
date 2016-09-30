@@ -25,5 +25,6 @@ npm run watch
 - [Default configuration (as built in the video)](https://github.com/jlengstorf/learn-rollup/)
 - [Simple Node server for development using Express](https://github.com/jlengstorf/learn-rollup/tree/alt-config/express)
 - [Extra configuration to support React](https://github.com/jlengstorf/learn-rollup/tree/alt-config/react)
+- [Extra configuration with `rollup-plugin-livereload`](https://github.com/jlengstorf/learn-rollup/tree/alt-config/rollup-plugin-livereload)
 
 
