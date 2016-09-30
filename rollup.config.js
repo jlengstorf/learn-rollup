@@ -6,6 +6,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 import postcss from 'rollup-plugin-postcss';
+import livereload from 'rollup-plugin-livereload';
 
 // PostCSS plugins
 import simplevars from 'postcss-simple-vars';
@@ -47,5 +48,6 @@ export default {
       ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
     (process.env.NODE_ENV === 'production' && uglify()),
+    (process.argv.indexOf('--live') !== -1 && livereload('build')),
   ],
 };
