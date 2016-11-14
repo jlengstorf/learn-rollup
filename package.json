@@ -1,9 +1,10 @@
 {
   "name": "learn-rollup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is an example project to accompany a tutorial on using Rollup.",
   "main": "build/js/main.min.js",
   "scripts": {
+    "build": "rollup -c",
     "dev": "rollup -c --watch",
     "reload": "livereload 'build/'",
     "watch": "npm-run-all --parallel reload dev",
@@ -21,23 +22,23 @@
   "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.2.0",
-    "cssnano": "^3.7.4",
-    "livereload": "^0.5.0",
-    "npm-run-all": "^3.0.0",
-    "postcss-cssnext": "^2.7.0",
+    "cssnano": "^3.8.0",
+    "livereload": "^0.6.0",
+    "npm-run-all": "^3.1.1",
+    "postcss-cssnext": "^2.8.0",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "rollup": "^0.34.9",
+    "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-commonjs": "^3.3.1",
-    "rollup-plugin-eslint": "^2.0.2",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-eslint": "^3.0.0",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-postcss": "^0.1.1",
+    "rollup-plugin-postcss": "^0.2.0",
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-watch": "^2.5.0"
   },
   "dependencies": {
-    "debug": "^2.2.0"
+    "debug": "^2.3.0"
   }
 }
