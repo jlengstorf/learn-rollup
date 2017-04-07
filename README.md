@@ -18,6 +18,13 @@ npm install
 
 # Start the watcher
 npm run watch
+
+# Run tests
+npm run test
+
+# Run test coverage report
+npm run coverage
+
 ```
 
 ## Alternative Configurations
@@ -26,5 +33,3 @@ npm run watch
 - [Simple Node server for development using Express](https://github.com/jlengstorf/learn-rollup/tree/alt-config/express)
 - [Extra configuration to support React](https://github.com/jlengstorf/learn-rollup/tree/alt-config/react)
 - [Extra configuration with `rollup-plugin-livereload`](https://github.com/jlengstorf/learn-rollup/tree/alt-config/rollup-plugin-livereload)
-
-

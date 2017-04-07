@@ -26,7 +26,7 @@ if (ENV !== 'production') {
 }
 
 // Run some functions from our imported modules.
-const result1 = sayHelloTo('Alex');
+const result1 = sayHelloTo('Jason');
 const result2 = addArray([1, 2, 3, 4]);
 
 // Print the results on the page.
