@@ -4,11 +4,15 @@
   "description": "This is an example project to accompany a tutorial on using Rollup.",
   "main": "build/js/main.min.js",
   "scripts": {
+    "lint": "eslint src test",
+    "prebuild": "npm run lint",
     "build": "rollup -c",
-    "dev": "rollup -c --watch",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "coverage": "nyc npm test",
     "reload": "livereload 'build/'",
-    "watch": "npm-run-all --parallel reload dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm-run-all --parallel reload dev"
   },
   "repository": {
     "type": "git",
@@ -21,10 +25,16 @@
   },
   "homepage": "https://github.com/jlengstorf/learn-rollup#readme",
   "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-polyfill": "^6.23.0",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
     "cssnano": "^3.9.1",
     "livereload": "^0.6.0",
+    "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
+    "nyc": "^10.2.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
@@ -32,6 +42,7 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-istanbul": "^1.1.0",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-postcss": "^0.2.0",
     "rollup-plugin-replace": "^1.1.1",

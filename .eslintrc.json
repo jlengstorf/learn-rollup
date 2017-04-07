@@ -1,7 +1,10 @@
 {
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "mocha": true,
+    "node": true
   },
   "globals": {
     "ENV": true
@@ -11,6 +14,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "no-console" : 1,
     "indent": [
       "error",
       2
