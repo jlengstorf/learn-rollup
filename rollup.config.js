@@ -28,12 +28,12 @@ export default {
       ],
       extensions: [ '.css' ],
     }),
+    commonjs(),
     resolve({
       jsnext: true,
       main: true,
       browser: true,
     }),
-    commonjs(),
     eslint({
       exclude: [
         'src/styles/**',
